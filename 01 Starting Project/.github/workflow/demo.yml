@@ -1,8 +1,9 @@
 name: Deploy website
-on: 
+on:
   push:
-    branches:
-      - main 
+    branches: [ main ]
+  pull_request:
+    branches: [ master ]
 jobs:
   test:
     runs-on: ubuntu-latest
